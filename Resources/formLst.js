@@ -14,7 +14,8 @@ xhr.onload = function() {
 		var fields = xml.documentElement.getElementsByTagName("field");
 		var names = xml.documentElement.getElementsByTagName("name");
 		var url = xml.documentElement.getElementsByTagName("url");
-		for (var i = 0, l = fields.length; i < l; i++) {
+		var i;
+		for (i = 0, l = fields.length; i < l; i++) {
 			dataN.push({
 				title : names.item(i).text
 			});
